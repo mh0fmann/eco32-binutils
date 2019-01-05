@@ -1,0 +1,18 @@
+#ifndef _ELF_ECO32_H
+#define _ELF_ECO32_H
+
+#include "elf/reloc-macros.h"
+
+/* Relocations.  */
+START_RELOC_NUMBERS (elf_eco32_reloc_type)
+  RELOC_NUMBER (R_ECO32_NONE, 0)
+  RELOC_NUMBER (R_ECO32_32,   1)
+  RELOC_NUMBER (R_ECO32_16,   2)
+  RELOC_NUMBER (R_ECO32_8,    3)
+  RELOC_NUMBER (R_ECO32_H16,  4)
+  RELOC_NUMBER (R_ECO32_L16,  5)
+  RELOC_NUMBER (R_ECO32_R16,  6)
+  RELOC_NUMBER (R_ECO32_R26,  7)
+END_RELOC_NUMBERS (R_ECO32_max)
+
+#endif /* _ELF_ECO32_H */

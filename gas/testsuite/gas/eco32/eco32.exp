@@ -1,0 +1,19 @@
+# ECO32 assembler testsuite
+
+if [istarget eco32*] {
+  run_dump_test "insn_RRR"
+  run_dump_test "insn_RRS"
+  run_dump_test "insn_RLS"
+  run_dump_test "insn_RRH"
+  run_dump_test "insn_RHH"
+  run_dump_test "insn_RRB"
+  run_dump_test "insn_J"
+  run_dump_test "insn_R"
+  run_dump_test "insn_RH"
+  run_dump_test "insn_N"
+  run_dump_test "reloc_32"
+  run_dump_test "reloc_H16"
+  run_dump_test "reloc_L16"
+  run_dump_test "reloc_R16"
+  run_dump_test "reloc_R26"
+}
